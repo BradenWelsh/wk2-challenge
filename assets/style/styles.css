@@ -9,30 +9,58 @@ header{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-color: grey;
-    font-size: 32px;
-    text-decoration: none;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(../images/hero.jpg);
+    background-size: cover;
+    background-position: 100%;
+    background-attachment: fixed;
+    z-index: 999;
     
 }
 header h1{
     font-weight: bold;    
     margin: 0;
+    text-decoration: none;
+    display: flex;
+    align-items: flex-end;
+    margin-left: 30px;
 }
 .hero-in{
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+.hero-in img{
+    height: 50px;
+    margin-top: 20px;
+}
+.hero-bg{
+    height: 100vh;
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../images/hero.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center center;
+    align-items: center;
+    text-align: center;
+    color: white;
+
+}
 header a{
     text-decoration: none;
+    color: white;
 }
 header nav{
     margin: 10px 0;
-    
+    display: flex;
+    align-items: flex-end;
 }
 header nav ul{
     display: flex;
     flex-direction: row;
-    justify-content: end;
+    justify-content: space-between;
     align-items: center;
     list-style-type: none;
 }
@@ -41,27 +69,75 @@ header nav ul li a{
     font-size: 1.55vw;
     font-weight: lighter;
 }
-body{
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
+header nav li a:hover{
+    text-decoration: underline;
 }
-.work{
-    height: 300px;
-    background-size: cover;
-    background-position: center;
-    position: relative;
+body{
+    margin: 0 auto;
+    font-family: sans-serif;
+    background-color: rgb(116, 115, 115);
+}
+
+.bio{
+    background-color: rgb(116, 115, 115);
+    margin: auto;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 18px;
 }
 .bio p{
-    width: 80%;
+    width: 100%;
     font-size: 20px;
     margin: 0 auto;
+    text-align: center;
+    line-height: 1;
+
+}
+#about-me{
+    max-width: 800px;
+}
+.bio .me-img{
+    width: 380px;
+    height: auto;
+    border-radius: 50%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.work{
+    height: 200vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../images/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 100%;
+    background-color: rgb(17, 17, 17);
+    color: white;
+}
+.work h2{
+    color: white;
+    padding-top: 60px;
+    text-align: center;
 }
 .contact{
-    d
+    padding-top: 60px;
+}
+.contact h2{
+    color: white;
+    padding-top: 60px;
+    text-align: center;
+    font-size: 1em;
 }   
+.contact .e-p{
+    text-decoration: none;
+    color: black;
+    list-style: none;
+    padding-top: 60px;
+    font-size: 1em;
+}
 .f-work{
     display: flex;
 }
