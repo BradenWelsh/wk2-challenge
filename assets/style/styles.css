@@ -185,3 +185,7 @@ body{
 section{
     padding: 60px;
 }
+.size{
+    width: 150px;
+    height: 350px;
+}
